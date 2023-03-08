@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Neoris.Accounts.DBModel.Interface;
 using Neoris.Accounts.DTO;
+using Neoris.Common;
 
 namespace Neoris.Accounts.Controllers
 {
@@ -15,40 +16,52 @@ namespace Neoris.Accounts.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] AccountDTO accountDTO)
         {
-            var a = await _accountLogic.Create(accountDTO);
-            return Ok(a.Message);
+            EntityResult<AccountDTO> result = await _accountLogic.Create(accountDTO);
+            if (result.IsCorrect)
+                return Ok(result);
+            else
+                return Ok(result.Message);
         }
 
         [Route("editar")]
         [HttpPut]
         public async Task<IActionResult> Edit([FromBody] AccountDTO accountDTO, int id)
         {
-            var a = await _accountLogic.Edit(accountDTO, id);
-            return Ok();
+            EntityResult<AccountDTO> result = await _accountLogic.Edit(accountDTO, id);
+            if (result.IsCorrect)
+                return Ok(result);
+            else
+                return Ok(result.Message);
         }
 
         [Route("eliminar")]
         [HttpDelete]
         public async Task<IActionResult> Eliminar(int id)
         {
-            var a = await _accountLogic.Delete(id);
-            return Ok();
+            EntityResult<AccountDTO> result = await _accountLogic.Delete(id);
+            if (result.IsCorrect)
+                return Ok(result);
+            else
+                return Ok(result.Message);
         }
 
         [Route("All")]
         [HttpGet]
         public async Task<IActionResult> All()
         {
-            var a = await _accountLogic.GetAll();
-            return Ok(a);
+            EntityResult<AccountDTO> result = await _accountLogic.GetAll();
+            if (result.IsCorrect)
+                return Ok(result);
+            else
+                return Ok(result.Message);
         }
 
-        [Route("Report")]
-        [HttpGet]
-        public async Task<IActionResult> Report()
-        {
-            var a = await _accountLogic.Report();
-            return Ok(a);
-        }
+        //[Route("Report")]
+        //[HttpGet]
+        //public async Task<IActionResult> Report()
+        //{
+        //    var a = await _accountLogic.Report();
+        //    return Ok(a);
+        //}
     }
 }

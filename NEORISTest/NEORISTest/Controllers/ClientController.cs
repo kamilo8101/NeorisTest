@@ -20,7 +20,7 @@ namespace Neoris.User.Controllers
         {
             EntityResult<ClientDTO> result = await _clientLogic.Create(clientDTO);
             if(result.IsCorrect)
-                return Ok(result.SimpleObject);
+                return Ok(result);
             else
                 return Ok(result.Message);
         }       
@@ -31,7 +31,7 @@ namespace Neoris.User.Controllers
         {
             EntityResult<ClientDTO> result =  await _clientLogic.Edit(clientDTO, id);
             if (result.IsCorrect)
-                return Ok(result.SimpleObject);
+                return Ok(result);
             else
                 return Ok(result.Message);
         }
@@ -40,16 +40,22 @@ namespace Neoris.User.Controllers
         [HttpDelete]
         public async Task<IActionResult> Eliminar(int id)
         {
-            var a = await _clientLogic.Delete(id);
-            return Ok();
+            EntityResult<ClientDTO> result = await _clientLogic.Delete(id);
+            if (result.IsCorrect)
+                return Ok(result);
+            else
+                return Ok(result.Message);
         }
 
-        [Route("All")]
+        [Route("all")]
         [HttpGet]
         public async Task<IActionResult> All()
         {
-            var a = await _clientLogic.GetAll();
-            return Ok(a);
+            EntityResult<ClientDTO> result = await _clientLogic.GetAll();
+            if (result.IsCorrect)
+                return Ok(result);
+            else
+                return Ok(result.Message);
         }
     }
 }
