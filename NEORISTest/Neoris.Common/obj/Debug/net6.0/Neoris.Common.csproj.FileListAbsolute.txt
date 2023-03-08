@@ -1,0 +1,14 @@
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\bin\Debug\net6.0\Neoris.Common.deps.json
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\bin\Debug\net6.0\Neoris.Common.runtimeconfig.json
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\bin\Debug\net6.0\Neoris.Common.dll
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\bin\Debug\net6.0\Neoris.Common.pdb
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\obj\Debug\net6.0\Neoris.Common.csproj.AssemblyReference.cache
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\obj\Debug\net6.0\Neoris.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\obj\Debug\net6.0\Neoris.Common.AssemblyInfoInputs.cache
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\obj\Debug\net6.0\Neoris.Common.AssemblyInfo.cs
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\obj\Debug\net6.0\Neoris.Common.csproj.CoreCompileInputs.cache
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\obj\Debug\net6.0\Neoris.Common.dll
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\obj\Debug\net6.0\refint\Neoris.Common.dll
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\obj\Debug\net6.0\Neoris.Common.pdb
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\obj\Debug\net6.0\Neoris.Common.genruntimeconfig.cache
+C:\Users\Camilo\source\repos\NEORISTest\Neoris.Common\obj\Debug\net6.0\ref\Neoris.Common.dll

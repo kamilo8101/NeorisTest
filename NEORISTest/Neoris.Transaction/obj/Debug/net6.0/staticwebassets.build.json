@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YtDHDstyPyzXG71GWdiv+leqyb7WbCaXim+qJQZ8g3s=",
+  "Source": "Neoris.Transactions",
+  "BasePath": "_content/Neoris.Transactions",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
